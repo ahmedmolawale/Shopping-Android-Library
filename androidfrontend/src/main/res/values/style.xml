@@ -3,9 +3,9 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/lib_shopping_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/lib_shopping_colorPrimaryDark</item>
+        <item name="colorAccent">@color/lib_shopping_colorAccent</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -19,7 +19,7 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
     <style name="MyEditViews" parent="Base.Widget.AppCompat.EditText">
-        <item name="android:background">@drawable/edit_text_rectangle_bordered</item>
+        <item name="android:background">@drawable/lib_shopping_edit_text_rectangle_bordered</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">45dp</item>
         <item name="android:textColorHint">@color/hint_text</item>
@@ -28,8 +28,8 @@
         <item name="android:textSize">15sp</item>
     </style>
 
-    <style name="MyEditViewsOlx" parent="Base.Widget.AppCompat.EditText">
-        <item name="android:background">@drawable/edit_text</item>
+    <style name="lib_shopping_MyEditViews_2" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/lib_shopping_edit_text</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">45dp</item>
         <item name="android:paddingLeft">15dp</item>
@@ -43,32 +43,32 @@
         <item name="android:layout_marginTop">23dp</item>
     </style>
 
-    <style name="TextInputLayoutAppearance" parent="@android:style/TextAppearance">
-        <item name="android:textColor">@color/colorAccent</item>
+    <style name="lib_shopping_TextInputLayoutAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/lib_shopping_colorAccent</item>
         <item name="android:textSize">14sp</item>
     </style>
 
 
-    <style name="RegisterTextInputLayoutAppearance" parent="@android:style/TextAppearance">
+    <style name="lib_shopping_RegisterTextInputLayoutAppearance" parent="@android:style/TextAppearance">
         <item name="android:textColor">#FF0</item>
         <item name="android:textSize">14sp</item>
     </style>
 
 
-    <style name="MyButtons" parent="Base.Widget.AppCompat.Button">
-        <item name="android:background">@drawable/oval_buttons</item>
+    <style name="lib_shopping_MyButtons" parent="Base.Widget.AppCompat.Button">
+        <item name="android:background">@drawable/lib_shopping_oval_buttons</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">45dp</item>
     </style>
 
-    <style name="MyButtonsBlue" parent="Base.Widget.AppCompat.Button">
-        <item name="android:background">@drawable/oval_buttons_blue</item>
+    <style name="lib_shopping_MyButtonsBlue" parent="Base.Widget.AppCompat.Button">
+        <item name="android:background">@drawable/lib_shopping_oval_buttons_blue</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">45dp</item>
     </style>
 
-    <style name="MyRegisterButtons" parent="Base.Widget.AppCompat.Button">
-        <item name="android:background">@drawable/rectangle_button</item>
+    <style name="lib_shopping_RegisterButtons" parent="Base.Widget.AppCompat.Button">
+        <item name="android:background">@drawable/lib_shopping_rectangle_button_1</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">50dp</item>
     </style>

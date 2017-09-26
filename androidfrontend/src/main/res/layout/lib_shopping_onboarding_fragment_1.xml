@@ -1,21 +1,21 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple">
+    android:background="@color/lib_shopping_purple">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:alpha="0.6"
-        android:src="@drawable/background3"/>
+        android:src="@drawable/lib_shopping_background_3"/>
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/section_label"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/after"/>
+        android:src="@drawable/lib_shopping_onboarding_fragment_image"/>
 
 
     <TextView

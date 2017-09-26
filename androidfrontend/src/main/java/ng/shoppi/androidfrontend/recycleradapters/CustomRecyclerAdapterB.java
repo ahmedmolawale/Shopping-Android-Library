@@ -18,7 +18,7 @@ import ng.shoppi.androidfrontend.listeners.OnRecyclerClickListener;
 
 
 /**
- * A custom Recycler Adapter using a typical view item.
+ * A custom Recycler Adapter using a typical view lib_shopping_recycler_item_1.
  *
  * @author Olawale
  * @version 1.0.0
@@ -39,7 +39,7 @@ public class CustomRecyclerAdapterB extends RecyclerView.Adapter<CustomRecyclerA
      * Used to initialize the custom recycler adapter
      *
      * @param context   {@link Context}
-     * @param items     {@link ArrayList}  An array list of Map containing the mapping in the view item. See sample app for usage details.
+     * @param items     {@link ArrayList}  An array list of Map containing the mapping in the view lib_shopping_recycler_item_1. See sample app for usage details.
      * @param loadImage boolean Pass true if the adapter should load the image with Picasso
      */
     public CustomRecyclerAdapterB(Context context, ArrayList<Map<String, String>> items, boolean loadImage) {
@@ -51,7 +51,7 @@ public class CustomRecyclerAdapterB extends RecyclerView.Adapter<CustomRecyclerA
 
     @Override
     public CustomRecyclerAdapterB.RecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.champ_alert_item, parent, false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.lib_shopping_recycler_item_2, parent, false);
         return new CustomRecyclerAdapterB.RecyclerViewHolder(v);
     }
 

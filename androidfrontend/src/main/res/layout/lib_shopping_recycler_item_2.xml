@@ -11,7 +11,7 @@
         android:layout_height="40dp"
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="5dp"
-        android:src="@drawable/alert_message_icon"/>
+        android:src="@drawable/lib_shopping_alert_message_icon"/>
 
     <RelativeLayout
         android:layout_width="match_parent"

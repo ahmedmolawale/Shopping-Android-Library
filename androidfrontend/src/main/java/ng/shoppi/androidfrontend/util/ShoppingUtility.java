@@ -12,9 +12,13 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 
 /**
- * An Utility Class for managing internet and permissions
+ * An Utility Class for managing internet and permissions.<br/>
+ * Note: The required permission must be specified in the manifest file as usual.<br/>
+ *
+ * Check the sample app for usage details.
  *
  * @author Olawale
+ * @version 1.0.0
  */
 
 public class ShoppingUtility {
@@ -62,7 +66,9 @@ public class ShoppingUtility {
     public static final int REQUEST_READ_EXTERNAL_STORAGE_PERMISSION = 980;
 
     /**
-     * @param context
+     * Call to check whether the device is connected to the internet.
+     *
+     * @param context {@link Context}
      * @return true if the the device is online
      */
     public static boolean isOnline(Context context) {
@@ -75,8 +81,10 @@ public class ShoppingUtility {
     //Group: Calendar
 
     /**
-     * @param context
-     * @return true if there is permission to read from the Calendar
+     * Call to check for Read Calendar permission
+     *
+     * @param context {@link Context}
+     * @return true if this permission is available
      */
     public static boolean hasReadCalendarPermission(Context context) {
         //We check if we have permission to read calendar
@@ -84,6 +92,11 @@ public class ShoppingUtility {
                 Manifest.permission.READ_CALENDAR) == PackageManager.PERMISSION_GRANTED);
     }
 
+    /**
+     * Call to request for Read Calendar permission
+     *
+     * @param context {@link Context}
+     */
     public static void requestReadCalendarPermission(final Context context) {
 
         if (ActivityCompat.shouldShowRequestPermissionRationale((AppCompatActivity) context,
@@ -114,8 +127,10 @@ public class ShoppingUtility {
     }
 
     /**
-     * @param context
-     * @return true if there is permission to write to the Calendar
+     * Call to check for Write Calendar permission
+     *
+     * @param context {@link Context}
+     * @return true if this permission is available
      */
     public static boolean hasWriteCalendarPermission(Context context) {
         //We check if we have permission to read calendar
@@ -123,6 +138,11 @@ public class ShoppingUtility {
                 Manifest.permission.READ_CALENDAR) == PackageManager.PERMISSION_GRANTED);
     }
 
+    /**
+     * Call to request for Write Calendar permission
+     *
+     * @param context {@link Context}
+     */
     public static void requestWriteCalendarPermission(final Context context) {
         if (ActivityCompat.shouldShowRequestPermissionRationale((AppCompatActivity) context,
                 Manifest.permission.WRITE_CALENDAR)) {
@@ -154,8 +174,10 @@ public class ShoppingUtility {
     //for the Camera Group
 
     /**
-     * @param context
-     * @return true if there is permission to use camera
+     * Call to check for Camera permission
+     *
+     * @param context {@link Context}
+     * @return true if this permission is available
      */
     public static boolean hasCameraPermission(Context context) {
         //We check if we have permission to read calendar
@@ -163,6 +185,11 @@ public class ShoppingUtility {
                 Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED);
     }
 
+    /**
+     * Call to request for Camera permission
+     *
+     * @param context {@link Context}
+     */
     public static void requestCameraPermission(final Context context) {
         if (ActivityCompat.shouldShowRequestPermissionRationale((AppCompatActivity) context,
                 Manifest.permission.CAMERA)) {
@@ -194,8 +221,10 @@ public class ShoppingUtility {
     //for the Contact Group
 
     /**
-     * @param context
-     * @return true if there is permission to read contacts
+     * Call to check for Read Contact permission
+     *
+     * @param context {@link Context}
+     * @return true if this permission is available
      */
     public static boolean hasReadContactsPermission(Context context) {
         //We check if we have permission to read contact
@@ -203,6 +232,11 @@ public class ShoppingUtility {
                 Manifest.permission.READ_CONTACTS) == PackageManager.PERMISSION_GRANTED);
     }
 
+    /**
+     * Call to request for Read Contacts permission
+     *
+     * @param context {@link Context}
+     */
     public static void requestReadContactsPermission(final Context context) {
 
         if (ActivityCompat.shouldShowRequestPermissionRationale((AppCompatActivity) context,
@@ -233,8 +267,10 @@ public class ShoppingUtility {
     }
 
     /**
-     * @param context
-     * @return true if there is permission to write contacts
+     * Call to check for Write Contacts permission
+     *
+     * @param context {@link Context}
+     * @return true if this permission is available
      */
     public static boolean hasWriteContactsPermission(Context context) {
         //We check if we have permission to write contact
@@ -242,6 +278,11 @@ public class ShoppingUtility {
                 Manifest.permission.WRITE_CONTACTS) == PackageManager.PERMISSION_GRANTED);
     }
 
+    /**
+     * Call to request for Write Contacts permission
+     *
+     * @param context {@link Context}
+     */
     public static void requestWriteContactsPermission(final Context context) {
 
         if (ActivityCompat.shouldShowRequestPermissionRationale((AppCompatActivity) context,
@@ -272,8 +313,10 @@ public class ShoppingUtility {
     }
 
     /**
-     * @param context
-     * @return true if there is permission to get accounts
+     * Call to check for Get Accounts permission
+     *
+     * @param context {@link Context}
+     * @return true if this permission is available
      */
     public static boolean hasGetAccountsPermission(Context context) {
         //We check if we have permission to get accounts
@@ -281,6 +324,11 @@ public class ShoppingUtility {
                 Manifest.permission.GET_ACCOUNTS) == PackageManager.PERMISSION_GRANTED);
     }
 
+    /**
+     * Call to request for Get Accounts permission
+     *
+     * @param context {@link Context}
+     */
     public static void requestGetAccountsPermission(final Context context) {
 
         if (ActivityCompat.shouldShowRequestPermissionRationale((AppCompatActivity) context,
@@ -313,8 +361,10 @@ public class ShoppingUtility {
     //Group: Location
 
     /**
-     * @param context
-     * @return true if there is permission to access location
+     * Call to check for Location permission
+     *
+     * @param context {@link Context}
+     * @return true if this permission is available
      */
     public static boolean hasLocationPermission(Context context) {
         //We check if we have permission to request location
@@ -322,6 +372,11 @@ public class ShoppingUtility {
                 ContextCompat.checkSelfPermission(context, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED);
     }
 
+    /**
+     * Call to request for Location permission
+     *
+     * @param context {@link Context}
+     */
     public static void requestLocationPermission(final Context context) {
         if (ActivityCompat.shouldShowRequestPermissionRationale((AppCompatActivity) context,
                 Manifest.permission.ACCESS_FINE_LOCATION)) {
@@ -353,14 +408,21 @@ public class ShoppingUtility {
     //for the Record Audio
 
     /**
-     * @param context
-     * @return true if there is permission to record Audio
+     * Call to check for Record Audio permission
+     *
+     * @param context {@link Context}
+     * @return true if this permission is available
      */
     public static boolean hasRecordAudioPermission(Context context) {
         //We check if we have permission to record audio
         return (ContextCompat.checkSelfPermission(context, Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED);
     }
 
+    /**
+     * Call to request for Record Audio permission
+     *
+     * @param context {@link Context}
+     */
     public static void requestRecordAudioPermission(final Context context) {
 
         if (ActivityCompat.shouldShowRequestPermissionRationale((AppCompatActivity) context,
@@ -393,14 +455,21 @@ public class ShoppingUtility {
     //Group: Phone
 
     /**
-     * @param context
-     * @return true if there is permission to read phone state
+     * Call to check for Read Phone State permission
+     *
+     * @param context {@link Context}
+     * @return true if this permission is available
      */
     public static boolean hasReadPhoneStatePermission(Context context) {
         //We check if we have permission to read phone state
         return (ContextCompat.checkSelfPermission(context, Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_GRANTED);
     }
 
+    /**
+     * Call to request for Read Phone State permission
+     *
+     * @param context {@link Context}
+     */
     public static void requestReadPhoneStatePermission(final Context context) {
 
         if (ActivityCompat.shouldShowRequestPermissionRationale((AppCompatActivity) context,
@@ -431,14 +500,21 @@ public class ShoppingUtility {
     }
 
     /**
-     * @param context
-     * @return true if there is permission to call phone
+     * Call to check for Call Phone permission
+     *
+     * @param context {@link Context}
+     * @return true if this permission is available
      */
     public static boolean hasCallPhonePermission(Context context) {
         //We check if we have permission to call Phone
         return (ContextCompat.checkSelfPermission(context, Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED);
     }
 
+    /**
+     * Call to request for Call Phone permission
+     *
+     * @param context {@link Context}
+     */
     public static void requestCallPhonePermission(final Context context) {
 
         if (ActivityCompat.shouldShowRequestPermissionRationale((AppCompatActivity) context,
@@ -469,8 +545,10 @@ public class ShoppingUtility {
     }
 
     /**
-     * @param context Call to this method requires API level 16
-     * @return true if there is permission to read call log
+     * Call to check for Read Call Log permission
+     *
+     * @param context {@link Context}
+     * @return true if this permission is available
      */
     public static boolean hasReadCallLogPermission(Context context) {
         //We check if we have permission to read call log
@@ -478,7 +556,10 @@ public class ShoppingUtility {
     }
 
     /**
-     * @param context Call to this method requires API level 16
+     * Call to check for Read Call Log permission.<br/>
+     * Call to this method requires API level 16
+     *
+     * @param context {@link Context}
      */
     public static void requestReadCallLogPermission(final Context context) {
         if (ActivityCompat.shouldShowRequestPermissionRationale((AppCompatActivity) context,
@@ -509,16 +590,22 @@ public class ShoppingUtility {
     }
 
     /**
-     * @param context Call to this method requires API level 16
-     * @return true if there is permission to write call log
+     * Call to check for Write Call Log permission
+     *
+     * @param context {@link Context}
+     * @return true if this permission is available
      */
     public static boolean hasWriteCallLogPermission(Context context) {
         //We check if we have permission to write call log
         return (ContextCompat.checkSelfPermission(context, Manifest.permission.WRITE_CALL_LOG) == PackageManager.PERMISSION_GRANTED);
     }
 
+
     /**
-     * @param context Call to this method requires API level 16
+     * Call to check for Write Call Log permission.<br/>
+     * Call to this method requires API level 16
+     *
+     * @param context {@link Context}
      */
     public static void requestWriteCallLogPermission(final Context context) {
         if (ActivityCompat.shouldShowRequestPermissionRationale((AppCompatActivity) context,
@@ -549,8 +636,10 @@ public class ShoppingUtility {
     }
 
     /**
-     * @param context
-     * @return true if there is permission to add voice mail
+     * Call to check for Add Voice mail permission
+     *
+     * @param context {@link Context}
+     * @return true if this permission is available
      */
     public static boolean hasAddVoicemailPermission(Context context) {
         //We check if we have permission to write call log
@@ -558,7 +647,9 @@ public class ShoppingUtility {
     }
 
     /**
-     * @param context
+     * Call to request for Add Voice Mail permission
+     *
+     * @param context {@link Context}
      */
     public static void requestAddVoicemailPermission(final Context context) {
         if (ActivityCompat.shouldShowRequestPermissionRationale((AppCompatActivity) context,
@@ -589,8 +680,10 @@ public class ShoppingUtility {
     }
 
     /**
-     * @param context
-     * @return true if there is permission to use SIP
+     * Call to check for Use SIP permission
+     *
+     * @param context {@link Context}
+     * @return true if this permission is available
      */
     public static boolean hasUseSIPPermission(Context context) {
         //We check if we have permission to use sip
@@ -598,7 +691,9 @@ public class ShoppingUtility {
     }
 
     /**
-     * @param context
+     * Call to request for Use Sip permission
+     *
+     * @param context {@link Context}
      */
     public static void requestUseSIPPermission(final Context context) {
         if (ActivityCompat.shouldShowRequestPermissionRationale((AppCompatActivity) context,
@@ -629,8 +724,10 @@ public class ShoppingUtility {
     }
 
     /**
-     * @param context
-     * @return true if there is permission to process outgoing calls
+     * Call to check for Process Outgoing Calls permission
+     *
+     * @param context {@link Context}
+     * @return true if this permission is available
      */
     public static boolean hasProcessOutgoingCallsPermission(Context context) {
         //We check if we have permission to process outgoing calls
@@ -638,7 +735,9 @@ public class ShoppingUtility {
     }
 
     /**
-     * @param context
+     * Call to request for Process Outgoing Calls permission
+     *
+     * @param context {@link Context}
      */
     public static void requestProcessOutgoingCallsPermission(final Context context) {
         if (ActivityCompat.shouldShowRequestPermissionRationale((AppCompatActivity) context,
@@ -671,6 +770,8 @@ public class ShoppingUtility {
     //GROUP: BODY SENSORS
 
     /**
+     * Call to check for Body Sensor permission
+     *
      * @param context This call requires API Level 21 and above
      * @return true if there is permission to body sensors
      */
@@ -680,7 +781,10 @@ public class ShoppingUtility {
     }
 
     /**
-     * @param context This call requires API Level 21 and above
+     * Call to request for Call Phone permission.<br/>
+     * This call requires API Level 21 and above
+     *
+     * @param context {@link Context}
      */
     public static void requestBodySensorsPermission(final Context context) {
         if (ActivityCompat.shouldShowRequestPermissionRationale((AppCompatActivity) context,
@@ -709,13 +813,13 @@ public class ShoppingUtility {
                     REQUEST_BODY_SENSORS_PERMISSION);
         }
     }
-
-
     //GROUP: SMS
 
     /**
-     * @param context
-     * @return true if there is permission to send SMS
+     * Call to check for Send SMS permission
+     *
+     * @param context {@link Context}
+     * @return true if this permission is available
      */
     public static boolean hasSendSMSPermission(Context context) {
         //We check if we have permission to send SMS
@@ -723,6 +827,11 @@ public class ShoppingUtility {
                 Manifest.permission.SEND_SMS) == PackageManager.PERMISSION_GRANTED);
     }
 
+    /**
+     * Call to request for Send SMS permission
+     *
+     * @param context {@link Context}
+     */
     public static void requestSendSMSPermission(final Context context) {
 
         if (ActivityCompat.shouldShowRequestPermissionRationale((AppCompatActivity) context,
@@ -754,8 +863,10 @@ public class ShoppingUtility {
     }
 
     /**
-     * @param context
-     * @return true if there is permission to Receive SMS
+     * Call to check for Receive SMS permission
+     *
+     * @param context {@link Context}
+     * @return true if this permission is available
      */
     public static boolean hasReceiveSMSPermission(Context context) {
         //We check if we have permission to Receive SMS
@@ -763,6 +874,11 @@ public class ShoppingUtility {
                 Manifest.permission.RECEIVE_SMS) == PackageManager.PERMISSION_GRANTED);
     }
 
+    /**
+     * Call to request for Receive SMS permission
+     *
+     * @param context {@link Context}
+     */
     public static void requestReceiveSMSPermission(final Context context) {
 
         if (ActivityCompat.shouldShowRequestPermissionRationale((AppCompatActivity) context,
@@ -794,8 +910,10 @@ public class ShoppingUtility {
     }
 
     /**
-     * @param context
-     * @return true if there is permission to Read SMS
+     * Call to check for Read SMS permission
+     *
+     * @param context {@link Context}
+     * @return true if this permission is available
      */
     public static boolean hasReadSMSPermission(Context context) {
         //We check if we have permission to Read SMS
@@ -803,6 +921,11 @@ public class ShoppingUtility {
                 Manifest.permission.READ_SMS) == PackageManager.PERMISSION_GRANTED);
     }
 
+    /**
+     * Call to request for Read SMS permission
+     *
+     * @param context {@link Context}
+     */
     public static void requestReadSMSPermission(final Context context) {
 
         if (ActivityCompat.shouldShowRequestPermissionRationale((AppCompatActivity) context,
@@ -834,8 +957,10 @@ public class ShoppingUtility {
     }
 
     /**
-     * @param context
-     * @return true if there is permission to Receive Wap Push
+     * Call to check for Receive Wap Push permission
+     *
+     * @param context {@link Context}
+     * @return true if this permission is available
      */
     public static boolean hasReceiveWapPushPermission(Context context) {
         //We check if we have permission to Read SMS
@@ -843,6 +968,11 @@ public class ShoppingUtility {
                 Manifest.permission.RECEIVE_WAP_PUSH) == PackageManager.PERMISSION_GRANTED);
     }
 
+    /**
+     * Call to request for Receive Wap Push permission
+     *
+     * @param context {@link Context}
+     */
     public static void requestReceiveWapPushPermission(final Context context) {
 
         if (ActivityCompat.shouldShowRequestPermissionRationale((AppCompatActivity) context,
@@ -874,8 +1004,10 @@ public class ShoppingUtility {
     }
 
     /**
-     * @param context
-     * @return true if there is permission to Receive MMS
+     * Call to check for ReceiveMMS permission
+     *
+     * @param context {@link Context}
+     * @return true if this permission is available
      */
     public static boolean hasReceiveMMSPermission(Context context) {
         //We check if we have permission to Receive MMS
@@ -883,6 +1015,11 @@ public class ShoppingUtility {
                 Manifest.permission.RECEIVE_MMS) == PackageManager.PERMISSION_GRANTED);
     }
 
+    /**
+     * Call to request for Receive MMS permission
+     *
+     * @param context {@link Context}
+     */
     public static void requestReceiveMMSPermission(final Context context) {
 
         if (ActivityCompat.shouldShowRequestPermissionRationale((AppCompatActivity) context,
@@ -916,8 +1053,10 @@ public class ShoppingUtility {
     //GROUP: STORAGE
 
     /**
-     * @param context
-     * @return true if there is permission to Write Storage
+     * Call to check for Write Storage permission
+     *
+     * @param context {@link Context}
+     * @return true if this permission is available
      */
     public static boolean hasWriteStoragePermission(Context context) {
         //We check if we have permission to write to SD
@@ -925,6 +1064,11 @@ public class ShoppingUtility {
                 Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED);
     }
 
+    /**
+     * Call to request for Write Storage permission
+     *
+     * @param context {@link Context}
+     */
     public static void requestWriteStoragePermission(final Context context) {
 
         if (ActivityCompat.shouldShowRequestPermissionRationale((AppCompatActivity) context,
@@ -955,6 +1099,8 @@ public class ShoppingUtility {
     }
 
     /**
+     * Call to check for Read Storage permission
+     *
      * @param context This call requires API Level 16 and above
      * @return true if there is permission to Read Storage
      */
@@ -965,7 +1111,10 @@ public class ShoppingUtility {
     }
 
     /**
-     * @param context This call requires API Level 16 and above
+     * Call to request for Use Sip permission.<br/>
+     * This call requires API Level 16 and above
+     *
+     * @param context {@link Context}
      */
     public static void requestReadStoragePermission(final Context context) {
 

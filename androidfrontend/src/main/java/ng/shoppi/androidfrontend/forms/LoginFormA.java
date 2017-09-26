@@ -28,7 +28,7 @@ import ng.shoppi.androidfrontend.util.Utility;
  * <i>app:user_id_label="Username"</i> - To change the user id label.<br/>
  * <i>app:sign_in_label="Log In"</i>   - To change the sign in label.<br/>
  * <i>app:sign_up_label="Register"</i> - To change the sign up label.<br/>
- * <i>app:logo="@drawable/back4"</i>   - To change the logo on the login form.<br/>
+ * <i>app:lib_shopping_logo_1="@drawable/back4"</i>   - To change the lib_shopping_logo_1 on the login form.<br/>
  * <i>app:background_image="@drawable/background"</i> - To change the background image of the form.<br/>
  * <i>app:login_validate_email="true"</i>  - set to true/false to validate email.<br/><br/>
  * After specifying the above in the layout file, It can then be referenced in the activity file just like a normal TextView for usage.<br/>
@@ -100,7 +100,7 @@ public class LoginFormA extends RelativeLayout {
     }
 
     private void initView(@Nullable AttributeSet attributeSet) {
-        View view = inflate(getContext(), R.layout.risk_login, null);
+        View view = inflate(getContext(), R.layout.lib_shopping_login_2, null);
         if (attributeSet == null) {
             addView(view);
             return;
@@ -145,7 +145,7 @@ public class LoginFormA extends RelativeLayout {
     }
 
     /**
-     * Call this method to initialize the form after referencing it from the layout.<br/>
+     * Call this method to initialize the form lib_shopping_onboarding_fragment_image referencing it from the layout.<br/>
      * See the sample app for more usage details.
      *
      * @param context {@link Context}
@@ -174,7 +174,7 @@ public class LoginFormA extends RelativeLayout {
     }
 
     /**
-     * Call this method to get a {@link User} object after input validation.
+     * Call this method to get a {@link User} object lib_shopping_onboarding_fragment_image input validation.
      *
      * @return a user object containing the user information i.e email and password.
      */

@@ -1,4 +1,5 @@
 <resources>
+    <!--Don't Change anything here-->
     <string name="app_name">Android Front End</string>
     <string name="action_login">Sign In</string>
     <string name="action_sign_up">Sign Up</string>

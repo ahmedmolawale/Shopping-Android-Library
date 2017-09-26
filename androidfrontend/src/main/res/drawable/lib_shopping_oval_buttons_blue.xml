@@ -12,13 +12,13 @@
     <item android:state_pressed="true">
         <shape android:shape="rectangle">
             <corners android:radius="@dimen/buttons_corner_radius"/>
-            <solid android:color="@color/colorPrimaryDark"/>
+            <solid android:color="@color/lib_shopping_colorPrimaryDark"/>
         </shape>
     </item>
     <item android:state_pressed="false">
         <shape android:shape="rectangle">
             <corners android:radius="@dimen/buttons_corner_radius"/>
-            <solid android:color="@color/colorPrimary"/>
+            <solid android:color="@color/lib_shopping_colorPrimary"/>
         </shape>
     </item>
 

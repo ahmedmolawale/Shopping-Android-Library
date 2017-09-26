@@ -22,7 +22,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_centerInParent="true"
-            android:indeterminateDrawable="@drawable/progress_circle"
+            android:indeterminateDrawable="@drawable/lib_shopping_progress_circle_1"
             android:visibility="gone" />
 
         <ScrollView
@@ -46,7 +46,7 @@
                     android:id="@+id/circle_image_olx"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/olx_logo_150x150"
+                    android:src="@drawable/lib_shopping_logo_2"
                     app:civ_border_color="#fff"
                     app:civ_border_width="3dp"
                     app:civ_fill_color="#fff" />
@@ -62,14 +62,14 @@
                     <android.support.design.widget.TextInputLayout
                         style="@style/MyTextInputLayout"
                         android:textColorHint="#555555"
-                        app:hintTextAppearance="@style/TextInputLayoutAppearance">
+                        app:hintTextAppearance="@style/lib_shopping_TextInputLayoutAppearance">
 
                         <EditText
                             android:id="@+id/editTextEmail_olx"
                             style="@style/MyEditViews"
                             android:layout_width="@dimen/register_edit_text_width"
                             android:layout_gravity="center"
-                            android:drawableLeft="@drawable/email_black_36x36_2"
+                            android:drawableLeft="@drawable/lib_shopping_email_logo"
                             android:drawablePadding="10dp"
                             android:hint="@string/prompt_email"
                             android:inputType="textEmailAddress"
@@ -88,14 +88,14 @@
                     <android.support.design.widget.TextInputLayout
                         style="@style/MyTextInputLayout"
                         android:textColorHint="#555555"
-                        app:hintTextAppearance="@style/TextInputLayoutAppearance">
+                        app:hintTextAppearance="@style/lib_shopping_TextInputLayoutAppearance">
 
                         <EditText
                             android:id="@+id/editTextPassword_olx"
-                            style="@style/MyEditViewsOlx"
+                            style="@style/lib_shopping_MyEditViews_2"
                             android:layout_width="@dimen/register_edit_text_width"
                             android:layout_gravity="center"
-                            android:drawableLeft="@drawable/lock_open_black_24x24"
+                            android:drawableLeft="@drawable/lib_shopping_lock_open_black"
                             android:drawablePadding="10dp"
                             android:hint="@string/prompt_password"
                             android:imeActionId="@+id/login"
@@ -170,7 +170,7 @@
                         android:layout_width="@dimen/register_edit_text_width"
                         android:layout_height="45dp"
                         android:layout_marginTop="40dp"
-                        android:background="@drawable/rectangle_button_olx"
+                        android:background="@drawable/lib_shopping_rectangle_button_2"
                         android:text="Sign In"
                         android:textColor="@color/light_text" />
 

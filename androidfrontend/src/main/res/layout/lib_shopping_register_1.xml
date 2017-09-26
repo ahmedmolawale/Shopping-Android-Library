@@ -3,7 +3,7 @@
     android:id="@+id/background_color_risk"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple"
+    android:background="@color/lib_shopping_purple"
     android:gravity="center_horizontal">
 
     <ImageView
@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:alpha="0.3"
         android:scaleType="centerCrop"
-        android:src="@drawable/background3" />
+        android:src="@drawable/lib_shopping_background_3" />
 
 
     <ScrollView
@@ -41,7 +41,7 @@
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_alignParentRight="true"
-                    android:src="@drawable/logo" />
+                    android:src="@drawable/lib_shopping_logo_1" />
 
 
             </RelativeLayout>
@@ -71,7 +71,7 @@
                     <android.support.design.widget.TextInputLayout
                         style="@style/MyTextInputLayout"
                         android:textColorHint="@color/hint_text"
-                        app:hintTextAppearance="@style/RegisterTextInputLayoutAppearance">
+                        app:hintTextAppearance="@style/lib_shopping_RegisterTextInputLayoutAppearance">
 
                         <EditText
                             android:id="@+id/editTextFirstName"
@@ -103,7 +103,7 @@
                     <android.support.design.widget.TextInputLayout
                         style="@style/MyTextInputLayout"
                         android:textColorHint="@color/hint_text"
-                        app:hintTextAppearance="@style/RegisterTextInputLayoutAppearance">
+                        app:hintTextAppearance="@style/lib_shopping_RegisterTextInputLayoutAppearance">
 
                         <EditText
                             android:id="@+id/editTextLastName"
@@ -136,7 +136,7 @@
                     <android.support.design.widget.TextInputLayout
                         style="@style/MyTextInputLayout"
                         android:textColorHint="@color/hint_text"
-                        app:hintTextAppearance="@style/RegisterTextInputLayoutAppearance">
+                        app:hintTextAppearance="@style/lib_shopping_RegisterTextInputLayoutAppearance">
 
                         <EditText
                             android:id="@+id/editTextEmail_risk"
@@ -168,7 +168,7 @@
                     <android.support.design.widget.TextInputLayout
                         style="@style/MyTextInputLayout"
                         android:textColorHint="@color/hint_text"
-                        app:hintTextAppearance="@style/RegisterTextInputLayoutAppearance">
+                        app:hintTextAppearance="@style/lib_shopping_RegisterTextInputLayoutAppearance">
 
                         <EditText
                             android:id="@+id/editTextPassword_risk"
@@ -203,7 +203,7 @@
                     <android.support.design.widget.TextInputLayout
                         style="@style/MyTextInputLayout"
                         android:textColorHint="@color/hint_text"
-                        app:hintTextAppearance="@style/RegisterTextInputLayoutAppearance">
+                        app:hintTextAppearance="@style/lib_shopping_RegisterTextInputLayoutAppearance">
 
                         <EditText
                             android:id="@+id/editTextConfirmPassword_risk"
@@ -239,7 +239,7 @@
                     <android.support.design.widget.TextInputLayout
                         style="@style/MyTextInputLayout"
                         android:textColorHint="@color/hint_text"
-                        app:hintTextAppearance="@style/RegisterTextInputLayoutAppearance">
+                        app:hintTextAppearance="@style/lib_shopping_RegisterTextInputLayoutAppearance">
 
                         <EditText
                             android:id="@+id/editTextPhone_risk"
@@ -273,7 +273,7 @@
                     <android.support.design.widget.TextInputLayout
                         style="@style/MyTextInputLayout"
                         android:textColorHint="@color/hint_text"
-                        app:hintTextAppearance="@style/RegisterTextInputLayoutAppearance">
+                        app:hintTextAppearance="@style/lib_shopping_RegisterTextInputLayoutAppearance">
 
                         <EditText
                             android:id="@+id/editTextAddress_risk"
@@ -394,7 +394,7 @@
                         style="@style/MyTextInputLayout"
 
                         android:textColorHint="@color/hint_text"
-                        app:hintTextAppearance="@style/RegisterTextInputLayoutAppearance">
+                        app:hintTextAppearance="@style/lib_shopping_RegisterTextInputLayoutAppearance">
 
                         <EditText
                             android:id="@+id/editTextReligion"
@@ -426,7 +426,7 @@
 
                     <Button
                         android:id="@+id/buttonRegister_risk"
-                        style="@style/MyButtons"
+                        style="@style/lib_shopping_MyButtons"
                         android:layout_width="match_parent"
                         android:layout_gravity="center"
                         android:layout_marginTop="40dp"
@@ -475,7 +475,7 @@
         android:layout_height="50dp"
         android:layout_centerInParent="true"
         android:layout_gravity="center"
-        android:indeterminateDrawable="@drawable/progress_circle"
+        android:indeterminateDrawable="@drawable/lib_shopping_progress_circle_1"
         android:visibility="gone" />
 
 </RelativeLayout>

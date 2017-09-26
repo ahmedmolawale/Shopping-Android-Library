@@ -40,7 +40,7 @@ public class OnboardingViews {
     public static void init(Activity activity) {
         mActivity = activity;
         Intent intent = new Intent(activity, OnboardingActivity.class);
-        intent.putExtra(DEFAULT_FRAGMENT_LAYOUT, R.layout.default_onboarding_fragment);
+        intent.putExtra(DEFAULT_FRAGMENT_LAYOUT, R.layout.lib_shopping_onboarding_fragment_1);
         activity.startActivity(intent);
     }
 }

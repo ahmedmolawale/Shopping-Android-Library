@@ -10,14 +10,14 @@ public interface OnRecyclerClickListener {
     /**
      * Onclick for items in the recycler view.
      *
-     * @param position int The position of the item clicked.
+     * @param position int The position of the lib_shopping_recycler_item_1 clicked.
      */
     void onItemClick(int position);
 
     /**
      * OnLongClick for items in the recycler view.
      *
-     * @param position int The position of the item long-clicked.
+     * @param position int The position of the lib_shopping_recycler_item_1 long-clicked.
      */
     boolean onItemLongClick(int position);
 

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--Don't Change anything here-->
 <resources>
     <declare-styleable name="LoginFormA">
         <attr name="logo" format="reference" />

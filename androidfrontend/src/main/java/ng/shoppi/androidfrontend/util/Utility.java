@@ -15,10 +15,10 @@ import ng.shoppi.androidfrontend.R;
 
 
 /**
+ * Used internally by the library.
  * @author Olawale
  */
-
-public class Utility {
+ public class Utility {
 
     public static boolean isEmailValid(String email) {
         boolean result = true;

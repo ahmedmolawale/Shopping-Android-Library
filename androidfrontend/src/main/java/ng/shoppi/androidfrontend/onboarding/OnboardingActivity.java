@@ -57,7 +57,7 @@ class OnboardingActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        setContentView(R.layout.onborading_skeleton);
+        setContentView(R.layout.lib_shopping_onborading_skeleton_1);
         layoutDots = (LinearLayout) findViewById(R.id.layoutDots);
         mViewPager = (ViewPager) findViewById(R.id.container);
         buttonSkip = (Button) findViewById(R.id.btn_skip);
@@ -78,7 +78,7 @@ class OnboardingActivity extends AppCompatActivity {
         } else if (intent != null && intent.hasExtra(OnboardingViews.DEFAULT_FRAGMENT_LAYOUT)) {
             //create DEFAULT_FRAGMENT_COUNT fragments for default
             for (int i = 0; i < DEFAULT_FRAGMENT_COUNT; i++) {
-                layouts.add(PlaceholderFragment.newInstance(R.layout.default_onboarding_fragment));
+                layouts.add(PlaceholderFragment.newInstance(R.layout.lib_shopping_onboarding_fragment_1));
             }
 
         }
@@ -195,7 +195,7 @@ class OnboardingActivity extends AppCompatActivity {
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             //noinspection deprecation
-            window.setStatusBarColor(context.getResources().getColor(R.color.colorPrimaryDark));
+            window.setStatusBarColor(context.getResources().getColor(R.color.lib_shopping_colorPrimaryDark));
         }
     }
 

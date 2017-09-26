@@ -12,20 +12,6 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".MainActivity">
-
-        </activity>
-        <activity android:name=".GenericHandlerDemo" />
-        <activity android:name=".RecylcerListDemo"/>
-        <activity android:name=".FormBActivityDemo">
-        </activity>
-        <activity android:name=".RegistrationRDemo">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
+        android:theme="@style/AppTheme.NoActionBar"></application>
 
 </manifest>

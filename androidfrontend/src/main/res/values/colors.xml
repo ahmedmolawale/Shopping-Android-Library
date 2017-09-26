@@ -4,13 +4,15 @@
    <color name="colorPrimaryDark">#303F9F</color>
    <color name="colorAccent">#FF4081</color-->
 
-    <color name="colorPrimary">#692690</color>
-    <color name="colorPrimaryDark">#490680</color>
-    <color name="colorAccent">#F96807</color>
+    <!--Dont Change anything here-->
+
+    <color name="lib_shopping_colorPrimary">#692690</color>
+    <color name="lib_shopping_colorPrimaryDark">#490680</color>
+    <color name="lib_shopping_colorAccent">#F96807</color>
 
 
 
-    <color name="purple">#FF14133B</color>
+    <color name="lib_shopping_purple">#FF14133B</color>
     <color name="background">#DEDEDE</color>
     <color name="buttonPressed">#DD2061</color>
     <color name="buttonUnPressed">#FF4081</color>
@@ -76,8 +78,8 @@
     <color name="hint_text_olx">#555555</color>
     <color name="secondary_text_olx">#000000</color>
 
-    <color name="buttonPressed_olx">#D95807</color>
-    <color name="buttonUnPressed_olx">#F96807</color>
+    <color name="lib_shopping_buttonPressed_2">#D95807</color>
+    <color name="lib_shopping_buttonUnPressed_2">#F96807</color>
     <color name="buttonDisabled_olx">#9999aa</color>
     <color name="alertDate">#06706C</color>
     <color name="text">#222222</color>

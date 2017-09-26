@@ -37,7 +37,7 @@ import ng.shoppi.androidfrontend.util.Utility;
  * <i>app:reg_user_id="Username"</i> - To change the user id label.<br/>
  * <i>app:reg_sign_in_label="Log In"</i>   - To change the sign in label.<br/>
  * <i>app:reg_sign_up_label="Register"</i> - To change the sign up label.<br/>
- * <i>app:reg_logo="@drawable/back4"</i>   - To change the logo on the login form.<br/>
+ * <i>app:reg_logo="@drawable/back4"</i>   - To change the lib_shopping_logo_1 on the login form.<br/>
  * <i>app:reg_background_image="@drawable/background"</i> - To change the background image of the form.<br/>
  * <i>app:reg_background_color="@color/background"</i> - To change the background color of the form.<br/>
  * <i>app:reg_gender_visible="false"</i> - To remove or add a gender field.<br/>
@@ -134,7 +134,7 @@ public class RegForm extends RelativeLayout {
     }
 
     private void initViews(@Nullable AttributeSet attributeSet) {
-        final View view = inflate(getContext(), R.layout.risk_register, null);
+        final View view = inflate(getContext(), R.layout.lib_shopping_register_1, null);
         if (attributeSet == null) {
             addView(view);
             return;
@@ -170,7 +170,7 @@ public class RegForm extends RelativeLayout {
         //getting values from the attribute set passed from xml
         TypedArray typedArray = getContext().obtainStyledAttributes(attributeSet, R.styleable.RegForm);
         Drawable backgroundDrawable = typedArray.getDrawable(R.styleable.RegForm_reg_background_image);
-        int backgroundColor = typedArray.getColor(R.styleable.RegForm_reg_background_color, getResources().getColor(R.color.purple));
+        int backgroundColor = typedArray.getColor(R.styleable.RegForm_reg_background_color, getResources().getColor(R.color.lib_shopping_purple));
         Drawable logoDrawable = typedArray.getDrawable(R.styleable.RegForm_reg_logo);
         String userIdLabel = typedArray.getString(R.styleable.RegForm_reg_user_id);
         String signInLabel = typedArray.getString(R.styleable.RegForm_reg_sign_in_label);
@@ -245,7 +245,7 @@ public class RegForm extends RelativeLayout {
     }
 
     /**
-     * Call this method to get a {@link User} object after input validation.
+     * Call this method to get a {@link User} object lib_shopping_onboarding_fragment_image input validation.
      *
      * @return a user object containing the user information i.e firstname, lastname, email, password etc
      */
@@ -405,7 +405,7 @@ public class RegForm extends RelativeLayout {
     }
 
     /**
-     * Call this method to initialize the form after referencing it from the layout.<br/>
+     * Call this method to initialize the form lib_shopping_onboarding_fragment_image referencing it from the layout.<br/>
      * See the sample app for more usage details.
      *
      * @param activity {@link Activity}

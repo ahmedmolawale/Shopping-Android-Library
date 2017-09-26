@@ -4,14 +4,14 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/purple"
+        android:background="@color/lib_shopping_purple"
         android:gravity="center_horizontal">
 
         <ImageView
             android:id="@+id/backgroundImage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/background3"
+            android:src="@drawable/lib_shopping_background_3"
             android:alpha="0.4"
             android:scaleType="centerCrop"/>
 
@@ -38,7 +38,7 @@
                     android:layout_width="@dimen/splash_logo_dims"
                     android:layout_height="@dimen/splash_logo_dims"
                     android:layout_marginBottom="25dp"
-                    android:src="@drawable/logo"/>
+                    android:src="@drawable/lib_shopping_logo_1"/>
 
                 <LinearLayout
                     android:id="@+id/linearLayoutLoginForm"
@@ -54,7 +54,7 @@
                     <android.support.design.widget.TextInputLayout
                         style="@style/MyTextInputLayout"
                         android:textColorHint="@color/hint_text"
-                        app:hintTextAppearance="@style/TextInputLayoutAppearance">
+                        app:hintTextAppearance="@style/lib_shopping_TextInputLayoutAppearance">
 
                         <EditText
                             android:id="@+id/editTextEmail"
@@ -78,7 +78,7 @@
                     <android.support.design.widget.TextInputLayout
                         style="@style/MyTextInputLayout"
                         android:textColorHint="@color/hint_text"
-                        app:hintTextAppearance="@style/TextInputLayoutAppearance">
+                        app:hintTextAppearance="@style/lib_shopping_TextInputLayoutAppearance">
 
                         <EditText
                             android:id="@+id/editTextPassword"
@@ -116,7 +116,7 @@
 
                     <Button
                         android:id="@+id/buttonLogin"
-                        style="@style/MyButtons"
+                        style="@style/lib_shopping_MyButtons"
                         android:layout_width="match_parent"
                         android:layout_gravity="center"
                         android:layout_marginTop="40dp"
@@ -165,7 +165,7 @@
             android:layout_height="50dp"
             android:layout_centerInParent="true"
             android:layout_gravity="center"
-            android:indeterminateDrawable="@drawable/progress_circle"
+            android:indeterminateDrawable="@drawable/lib_shopping_progress_circle_1"
             android:visibility="gone"/>
 
     </RelativeLayout>
