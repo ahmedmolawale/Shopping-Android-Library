@@ -107,26 +107,22 @@ public class LoginFormB extends RelativeLayout {
             return;
         }
         //grab the views
-        logo = view.findViewById(R.id.circle_image_olx);
-        editTextEmail = view.findViewById(R.id.editTextEmail_olx);
-        editTextPassword = view.findViewById(R.id.editTextPassword_olx);
-        forgotPasswordTextView = view.findViewById(R.id.textViewForgotPassword_olx);
-        signInButton = view.findViewById(R.id.buttonSignIn_olx);
-        signUpTextView = view.findViewById(R.id.textViewRegister_olx);
-        linearLayoutLoginForm = view.findViewById(R.id.linearLayoutLoginForm_olx);
-        progressBarSignIn = view.findViewById(R.id.progressBarSignIn_olx);
+        logo = (CircleImageView) view.findViewById(R.id.circle_image_olx);
+        editTextEmail = (EditText)view.findViewById(R.id.editTextEmail_olx);
+        editTextPassword = (EditText) view.findViewById(R.id.editTextPassword_olx);
+        forgotPasswordTextView = (TextView) view.findViewById(R.id.textViewForgotPassword_olx);
+        signInButton = (Button) view.findViewById(R.id.buttonSignIn_olx);
+        signUpTextView = (TextView) view.findViewById(R.id.textViewRegister_olx);
+        linearLayoutLoginForm = (LinearLayout) view.findViewById(R.id.linearLayoutLoginForm_olx);
+        progressBarSignIn = (ProgressBar) view.findViewById(R.id.progressBarSignIn_olx);
 
         TypedArray typedArray = getContext().obtainStyledAttributes(attributeSet, R.styleable.LoginFormB);
         Drawable logoDrawable = typedArray.getDrawable(R.styleable.LoginFormB_logo_b);
-        String userIdLabel = typedArray.getString(R.styleable.LoginFormB_user_id_label_b);
+
         String signInLabel = typedArray.getString(R.styleable.LoginFormB_sign_in_label_b);
         String signUpLabel = typedArray.getString(R.styleable.LoginFormB_sign_up_label_b);
         validateEmail = typedArray.getBoolean(R.styleable.LoginFormB_login_validate_email_b, true);
 
-        if (userIdLabel != null && !userIdLabel.equals(""))
-            editTextEmail.setHint(userIdLabel);
-        else
-            editTextEmail.setHint("Email");
 
         if (signInLabel != null && !signInLabel.equals(""))
             signInButton.setText(signInLabel);

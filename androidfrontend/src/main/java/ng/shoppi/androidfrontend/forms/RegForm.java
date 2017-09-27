@@ -141,30 +141,30 @@ public class RegForm extends RelativeLayout {
         }
 
         //grab the views
-        relativeLayoutBackgroundColor = view.findViewById(R.id.background_color_risk);
-        backgroundImageView = view.findViewById(R.id.backgroundImage_register_risk);
-        imageView = view.findViewById(R.id.imageViewLogo);
-        editTextFirstName = view.findViewById(R.id.editTextFirstName);
-        editTextLastName = view.findViewById(R.id.editTextLastName);
-        editTextEmail = view.findViewById(R.id.editTextEmail_risk);
-        editTextPassword = view.findViewById(R.id.editTextPassword_risk);
-        editTextConfirmPassword = view.findViewById(R.id.editTextConfirmPassword_risk);
-        editTextPhone = view.findViewById(R.id.editTextPhone_risk);
-        editTextAddress = view.findViewById(R.id.editTextAddress_risk);
-        radioGroupGender = view.findViewById(R.id.radioGroupGender_risk);
-        appCompatMaritalStatus = view.findViewById(R.id.appCompatSpinnerMaritalStatus);
-        editTextReligion = view.findViewById(R.id.editTextReligion);
-        buttonRegister = view.findViewById(R.id.buttonRegister_risk);
-        textViewLogin = view.findViewById(R.id.textViewLogin_risk);
-        progressBar = view.findViewById(R.id.progressBarSignIn_risk);
-        linearLayoutRegForm = view.findViewById(R.id.linearLayoutRegisterForm);
+        relativeLayoutBackgroundColor = (RelativeLayout) view.findViewById(R.id.background_color_risk);
+        backgroundImageView = (ImageView) view.findViewById(R.id.backgroundImage_register_risk);
+        imageView = (ImageView) view.findViewById(R.id.imageViewLogo);
+        editTextFirstName = (EditText) view.findViewById(R.id.editTextFirstName);
+        editTextLastName = (EditText) view.findViewById(R.id.editTextLastName);
+        editTextEmail = (EditText) view.findViewById(R.id.editTextEmail_risk);
+        editTextPassword = (EditText) view.findViewById(R.id.editTextPassword_risk);
+        editTextConfirmPassword = (EditText) view.findViewById(R.id.editTextConfirmPassword_risk);
+        editTextPhone = (EditText) view.findViewById(R.id.editTextPhone_risk);
+        editTextAddress = (EditText) view.findViewById(R.id.editTextAddress_risk);
+        radioGroupGender = (RadioGroup) view.findViewById(R.id.radioGroupGender_risk);
+        appCompatMaritalStatus = (AppCompatSpinner) view.findViewById(R.id.appCompatSpinnerMaritalStatus);
+        editTextReligion = (TextView) view.findViewById(R.id.editTextReligion);
+        buttonRegister = (Button) view.findViewById(R.id.buttonRegister_risk);
+        textViewLogin = (TextView) view.findViewById(R.id.textViewLogin_risk);
+        progressBar = (ProgressBar) view.findViewById(R.id.progressBarSignIn_risk);
+        linearLayoutRegForm = (LinearLayout) view.findViewById(R.id.linearLayoutRegisterForm);
 
         //linear layout for visibility toggle
-        phoneLayout = view.findViewById(R.id.phone_layout_risk);
-        genderLayout = view.findViewById(R.id.gender_layout_risk);
-        addressLayout = view.findViewById(R.id.address_layout_risk);
-        maritalStatusLayout = view.findViewById(R.id.marital_status_layout_risk);
-        religionLayout = view.findViewById(R.id.religion_layout_risk);
+        phoneLayout = (LinearLayout) view.findViewById(R.id.phone_layout_risk);
+        genderLayout = (LinearLayout) view.findViewById(R.id.gender_layout_risk);
+        addressLayout = (LinearLayout) view.findViewById(R.id.address_layout_risk);
+        maritalStatusLayout = (LinearLayout) view.findViewById(R.id.marital_status_layout_risk);
+        religionLayout = (LinearLayout) view.findViewById(R.id.religion_layout_risk);
 
 
         //getting values from the attribute set passed from xml
@@ -236,7 +236,7 @@ public class RegForm extends RelativeLayout {
                 // get selected radio button from radioGroup
                 int selectedId = radioGroup.getCheckedRadioButtonId();
                 // find the radiobutton by returned id
-                RadioButton radioButton = view.findViewById(selectedId);
+                RadioButton radioButton = (RadioButton) view.findViewById(selectedId);
                 gender = radioButton.getText().toString();
             }
         });

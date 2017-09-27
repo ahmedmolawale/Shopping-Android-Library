@@ -81,9 +81,9 @@ public class CustomRecyclerAdapterA extends RecyclerView.Adapter<CustomRecyclerA
 
         RecyclerViewHolder(View itemView) {
             super(itemView);
-            imageViewAvatar = itemView.findViewById(R.id.imageViewAvatar);
-            textViewObjectName = itemView.findViewById(R.id.textViewObjectName);
-            textViewObjectAddress = itemView.findViewById(R.id.textViewObjectAddress);
+            imageViewAvatar = (CircleImageView) itemView.findViewById(R.id.imageViewAvatar);
+            textViewObjectName = (TextView) itemView.findViewById(R.id.textViewObjectName);
+            textViewObjectAddress = (TextView) itemView.findViewById(R.id.textViewObjectAddress);
             itemView.setOnClickListener(this);
             itemView.setOnLongClickListener(this);
             imageViewAvatar.setOnClickListener(new View.OnClickListener() {

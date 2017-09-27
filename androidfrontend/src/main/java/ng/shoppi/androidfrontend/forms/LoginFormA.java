@@ -106,15 +106,15 @@ public class LoginFormA extends RelativeLayout {
             return;
         }
         //grab the views
-        backgroundImageView = view.findViewById(R.id.backgroundImage);
-        imageView = view.findViewById(R.id.logo);
-        editTextEmail = view.findViewById(R.id.editTextEmail);
-        editTextPassword = view.findViewById(R.id.editTextPassword);
-        forgotPasswordTextView = view.findViewById(R.id.textViewForgotPassword);
-        signInButton = view.findViewById(R.id.buttonLogin);
-        signUpTextView = view.findViewById(R.id.textViewSignUp);
-        linearLayoutLoginForm = view.findViewById(R.id.linearLayoutLoginForm);
-        progressBarSignIn = view.findViewById(R.id.progressBarSignIn);
+        backgroundImageView = (ImageView) view.findViewById(R.id.backgroundImage);
+        imageView = (ImageView) view.findViewById(R.id.logo);
+        editTextEmail = (EditText) view.findViewById(R.id.editTextEmail);
+        editTextPassword = (EditText) view.findViewById(R.id.editTextPassword);
+        forgotPasswordTextView = (TextView) view.findViewById(R.id.textViewForgotPassword);
+        signInButton = (Button) view.findViewById(R.id.buttonLogin);
+        signUpTextView = (TextView) view.findViewById(R.id.textViewSignUp);
+        linearLayoutLoginForm = (LinearLayout) view.findViewById(R.id.linearLayoutLoginForm);
+        progressBarSignIn = (ProgressBar) view.findViewById(R.id.progressBarSignIn);
 
         TypedArray typedArray = getContext().obtainStyledAttributes(attributeSet, R.styleable.LoginFormA);
         Drawable backgroundDrawable = typedArray.getDrawable(R.styleable.LoginFormA_background_image);

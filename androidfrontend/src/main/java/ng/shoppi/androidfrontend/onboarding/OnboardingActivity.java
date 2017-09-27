@@ -33,7 +33,7 @@ import ng.shoppi.androidfrontend.listeners.OnboardingListener;
  * @version 1.0.0
  */
 
-class OnboardingActivity extends AppCompatActivity {
+public class OnboardingActivity extends AppCompatActivity {
 
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private Context context;

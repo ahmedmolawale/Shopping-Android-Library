@@ -12,7 +12,6 @@
 
     <declare-styleable name="LoginFormB">
         <attr name="logo_b" format="reference" />
-        <attr name="user_id_label_b" format="string" />
         <attr name="sign_in_label_b" format="string" />
         <attr name="sign_up_label_b" format="string" />
         <attr name="login_validate_email_b" format="boolean"/>

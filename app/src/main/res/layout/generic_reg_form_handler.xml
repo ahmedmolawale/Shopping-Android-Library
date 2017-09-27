@@ -1,0 +1,261 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#252525"/>
+
+        <ProgressBar
+            android:id="@+id/progressBarSignIn"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/lib_shopping_progress_circle_1"
+            android:visibility="gone"/>
+
+
+        <ScrollView
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/email_login_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="50dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/user4"
+                    app:civ_border_color="@color/colorAccent"
+                    app:civ_border_width="3dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:background="#fff"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/MyTextInputLayout"
+                        android:textColorHint="@color/hint_text"
+                        app:hintTextAppearance="@style/TextInputLayoutAppearance">
+
+                        <EditText
+                            android:id="@+id/editTextFirstName"
+                            style="@style/MyEditViews"
+                            android:layout_width="@dimen/register_edit_text_width"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@drawable/account_circle_black_36x36"
+                            android:drawablePadding="10dp"
+                            android:hint="@string/prompt_firstname"
+                            android:inputType="textPersonName"
+                            android:maxLines="1"
+                            android:singleLine="true"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View
+                        android:layout_width="@dimen/register_edit_text_width"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="3dp"
+                        android:background="#CCCCCC"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/MyTextInputLayout"
+                        android:textColorHint="@color/hint_text"
+                        app:hintTextAppearance="@style/TextInputLayoutAppearance">
+
+                        <EditText
+                            android:id="@+id/editTextLastName"
+                            style="@style/MyEditViews"
+                            android:layout_width="@dimen/register_edit_text_width"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@drawable/account_circle_black_36x36"
+                            android:drawablePadding="10dp"
+                            android:hint="@string/prompt_lastname"
+                            android:inputType="textPersonName"
+                            android:maxLines="1"
+                            android:singleLine="true"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View
+                        android:layout_width="@dimen/register_edit_text_width"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="3dp"
+                        android:background="#CCCCCC"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/MyTextInputLayout"
+                        android:textColorHint="@color/hint_text"
+                        app:hintTextAppearance="@style/TextInputLayoutAppearance">
+
+                        <EditText
+                            android:id="@+id/editTextPhone"
+                            style="@style/MyEditViews"
+                            android:layout_width="@dimen/register_edit_text_width"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@drawable/phone_black_36x36"
+                            android:drawablePadding="10dp"
+                            android:hint="@string/prompt_phone"
+                            android:inputType="phone"
+                            android:maxLines="1"
+                            android:singleLine="true"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View
+                        android:layout_width="@dimen/register_edit_text_width"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="3dp"
+                        android:background="#CCCCCC"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/MyTextInputLayout"
+                        android:textColorHint="@color/hint_text"
+                        app:hintTextAppearance="@style/TextInputLayoutAppearance">
+
+                        <EditText
+                            android:id="@+id/email"
+                            style="@style/MyEditViews"
+                            android:layout_width="@dimen/register_edit_text_width"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@drawable/lib_shopping_email_logo"
+                            android:drawablePadding="10dp"
+                            android:hint="@string/prompt_email"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:singleLine="true"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View
+                        android:layout_width="@dimen/register_edit_text_width"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="3dp"
+                        android:background="#CCCCCC"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/MyTextInputLayout"
+                        android:textColorHint="@color/hint_text"
+                        app:hintTextAppearance="@style/TextInputLayoutAppearance">
+
+                        <EditText
+                            android:id="@+id/password"
+                            style="@style/MyEditViews"
+                            android:layout_width="@dimen/register_edit_text_width"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@drawable/lib_shopping_lock_open_black"
+                            android:drawablePadding="10dp"
+                            android:hint="@string/prompt_password"
+                            android:imeActionId="@+id/login"
+                            android:imeActionLabel="@string/action_sign_in_short"
+                            android:imeOptions="actionUnspecified"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:singleLine="true"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View
+                        android:layout_width="@dimen/register_edit_text_width"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="3dp"
+                        android:background="#CCCCCC"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/MyTextInputLayout"
+                        >
+
+                        <EditText
+                            android:id="@+id/confirmpassword"
+                            style="@style/MyEditViews"
+                            android:layout_width="@dimen/register_edit_text_width"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@drawable/lib_shopping_lock_open_black"
+                            android:drawablePadding="10dp"
+                            android:hint="Confirm Password"
+                            android:imeActionId="@+id/login"
+                            android:imeActionLabel="@string/action_sign_in_short"
+                            android:imeOptions="actionUnspecified"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:singleLine="true"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View
+                        android:layout_width="@dimen/register_edit_text_width"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="3dp"
+                        android:background="#CCCCCC"/>
+
+                    <Button
+                        android:id="@+id/email_sign_in_button"
+                        android:layout_width="@dimen/register_edit_text_width"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/lib_shopping_rectangle_button_1"
+                        android:text="Register"
+                        android:textColor="@color/light_text"
+                        android:textStyle="bold"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="or"
+                            android:textColor="@color/light_text"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:id="@+id/textViewLogin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/action_login"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

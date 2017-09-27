@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<ng.shoppi.androidfrontend.forms.LoginFormA
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:user_id_label="Username"
+    app:logo="@drawable/lib_shopping_background_3"
+    app:background_image="@drawable/background3"
+    app:login_validate_email="false"/>
+
+
+</LinearLayout>

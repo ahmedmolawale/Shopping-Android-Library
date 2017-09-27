@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+   <ng.shoppi.androidfrontend.forms.RegForm
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:reg_phone_visible="false"
+       app:reg_marital_status_visible="false"
+       app:reg_gender_visible="false"
+       app:reg_validate_email="true"
+       app:reg_background_image="@drawable/back4"
+       />
+
+</LinearLayout>
