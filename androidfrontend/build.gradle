@@ -1,27 +1,4 @@
 apply plugin: 'com.android.library'
-ext {
-    bintrayRepo = 'Shopping-Android-Library'
-    bintrayName = 'androidfrontend'
-
-    publishedGroupId = 'ng.shoppi'
-    libraryName = 'androidfrontend'
-    artifact = 'androidfrontend'
-
-    libraryDescription = 'A library to hasten the development time of android apps by providing commonly used components during application development.'
-
-    siteUrl = 'https://bitbucket.org/shoppingrepo/android-front-end-library'
-    gitUrl = 'https://bitbucket.org/shoppingrepo/android-front-end-library.git'
-
-    libraryVersion = '1.0.0'
-
-    developerId = 'ahmedmolawale'
-    developerName = 'Olawale Ahmed'
-    developerEmail = 'ahmedmolawale@gmail.com'
-
-    licenseName = 'The Apache Software License, Version 2.0'
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["Apache-2.0"]
-}
 
 
 android {
@@ -63,5 +40,3 @@ dependencies {
 
 }
 
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
